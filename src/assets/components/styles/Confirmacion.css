@@ -1,0 +1,33 @@
+.salir{
+    transform: scale(0);
+}
+.confirmation {
+    position: absolute;
+    width: 25%;
+    height: 60px;
+    background-color: aliceblue;
+    border: 1px solid;
+    border-radius: 0.3em;
+}
+.exit {
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+.message {
+    text-align: center;
+    padding-right: 2em;
+    padding-top: 0.5em;
+}
+.created{
+    background-image: linear-gradient(to bottom, #d9d7e0, #42ff84);
+    border-color: #42ff84;
+}
+.updated {
+    background-image: linear-gradient(to bottom, #d9d7e0, #e9ff42);
+    border-color: #e9ff42;
+}
+.deleted {
+    background-image: linear-gradient(to bottom, #d9d7e0, #ff7142);
+    border-color: #ff7142;
+}

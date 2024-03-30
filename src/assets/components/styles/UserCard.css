@@ -1,0 +1,49 @@
+.card {
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #75717117
+}
+.card__name {
+    font-size: 1.2em;
+    text-align: center;
+}
+.card__hr {
+    border: 1px solid rgb(119, 106, 106, 0.3);
+    margin-inline: 1em;
+}
+.card__list {
+    padding-left: 1em;
+}
+.card__item {
+    display: flex;
+    flex-direction: column;
+}
+.card__label {
+    padding-top: 0.5em;
+    opacity: 0.5;
+}
+.card__value {
+    display: flex;
+    gap: 0.5em;
+}
+.card__btn__delete, .card__btn__edit {
+    background-color: transparent;
+    border: none;
+}
+.icon__gift {
+    display: block;
+    width: 1em;
+}
+.icon__delete{
+    background-color: rgb(240, 71, 71);
+}
+.icon__edit {
+    background-color: rgb(225, 225, 225);
+    border: 1.5px solid #615e5e80;
+    opacity: 0.5;
+}
+.icon__delete, .icon__edit {
+    width: 2em;
+    transition: transform 0.3ms ease;
+      
+}

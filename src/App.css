@@ -1,0 +1,29 @@
+.app {
+    margin: 2em;
+}
+.app__header {
+    display: flex;
+    justify-content: space-between;
+}
+.app__title {
+    font-size: 3em;
+}
+.form__btn {
+    margin-top: 1em;
+    font-size: 1em;
+    padding: 0.3em 1em;
+    background-color: #555A88;
+    color: white;
+    border: none;
+    border-radius: 0.5em;
+    &:hover {
+        filter: brightness(1.2);
+
+    }
+}
+.user-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
