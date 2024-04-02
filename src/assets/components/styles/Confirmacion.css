@@ -4,6 +4,7 @@
 .confirmation {
     position: absolute;
     width: 25%;
+    max-width: 50%;
     height: 60px;
     background-color: aliceblue;
     border: 1px solid;

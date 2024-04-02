@@ -1,11 +1,13 @@
 .card {
     width: 100%;
     max-width: 300px;
-    border: 1px solid #75717117
+    border: 1px solid #75717117;
+    margin: 1em;
 }
 .card__name {
     font-size: 1.2em;
     text-align: center;
+    text-transform: capitalize;
 }
 .card__hr {
     border: 1px solid rgb(119, 106, 106, 0.3);
@@ -20,7 +22,6 @@
 }
 .card__label {
     padding-top: 0.5em;
-    opacity: 0.5;
 }
 .card__value {
     display: flex;
@@ -40,7 +41,6 @@
 .icon__edit {
     background-color: rgb(225, 225, 225);
     border: 1.5px solid #615e5e80;
-    opacity: 0.5;
 }
 .icon__delete, .icon__edit {
     width: 2em;
