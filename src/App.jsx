@@ -30,8 +30,7 @@ function App() {
       <header className='app__header'>
         <h1 className='app__title'>Users</h1>
         <div>
-          <input type='text'></input>
-          <button>buscar</button>
+          
         </div>
         <button onClick={handleOpenForm} className='form__btn'><img src={iconCreate} className='icon' alt="create" /> <span>crear usuario</span></button>
       </header>        
