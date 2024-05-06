@@ -14,7 +14,7 @@ function App() {
   const [confirmation, setconfirmation] = useState('')
   const [closeConfirm, setCloseConfirm] = useState(true)
 
-  const BASEURL = 'http://localhost:8080'
+  const BASEURL = 'https://users-crud-c6ok.onrender.com'
   const [users, getUsers, createUsers, deleteUsers, updateUsers, loading] = useCrud(BASEURL)
 
   useEffect(() => {
