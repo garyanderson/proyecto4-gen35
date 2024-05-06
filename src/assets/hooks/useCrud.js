@@ -44,7 +44,7 @@ const useCrud = (BASEURL) => {
         .finally(() => setLoading(false))
         }
   
-    return [response, getApi, postApi, deleteApi, updateApi, loading ]
+    return [response, getApi, postApi, deleteApi, updateApi, loading]
 }
 
 export default useCrud

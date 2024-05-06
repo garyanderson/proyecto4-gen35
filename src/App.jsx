@@ -14,11 +14,11 @@ function App() {
   const [confirmation, setconfirmation] = useState('')
   const [closeConfirm, setCloseConfirm] = useState(true)
 
-  const BASEURL = 'https://users-crud.academlo.tech'
+  const BASEURL = 'http://localhost:8080'
   const [users, getUsers, createUsers, deleteUsers, updateUsers, loading] = useCrud(BASEURL)
 
   useEffect(() => {
-        getUsers('/users/')
+        getUsers('/users')
   }, [])
 
   const handleOpenForm = () => {
@@ -29,6 +29,10 @@ function App() {
     <div className='app'>
       <header className='app__header'>
         <h1 className='app__title'>Users</h1>
+        <div>
+          <input type='text'></input>
+          <button>buscar</button>
+        </div>
         <button onClick={handleOpenForm} className='form__btn'><img src={iconCreate} className='icon' alt="create" /> <span>crear usuario</span></button>
       </header>        
       <FormUsers 

@@ -19,7 +19,7 @@ const FormUsers = ({ createUser, userEdit, updateUser, setUserEdit, formIsClose,
         setconfirmation(data)
         setCloseConfirm(false)
       }else{
-        createUser('/users/', data) 
+        createUser('/users', data) 
         data.text = 'created'
         setconfirmation(data)  
         setCloseConfirm(false)     
@@ -40,8 +40,8 @@ const FormUsers = ({ createUser, userEdit, updateUser, setUserEdit, formIsClose,
       reset({
         email: '',
         password: '',
-        first_name: '',
-        last_name: '',
+        firstname: '',
+        lastname: '',
         birthday: ''
     })
     setUserEdit()
@@ -64,11 +64,11 @@ const FormUsers = ({ createUser, userEdit, updateUser, setUserEdit, formIsClose,
         </label>
         <label className="form__label">
           <span className="form__field">First Name</span>
-          <input className="form__field__value" {...register('first_name')} type="text" />
+          <input className="form__field__value" {...register('firstname')} type="text" />
         </label>
         <label className="form__label">
           <span className="form__field">Last Name</span>
-          <input className="form__field__value" {...register('last_name')} type="text" />
+          <input className="form__field__value" {...register('lastname')} type="text" />
         </label>
         <label className="form__label">
           <span className="form__field">Bitrhday</span>

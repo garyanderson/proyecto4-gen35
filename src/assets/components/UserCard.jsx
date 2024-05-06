@@ -14,9 +14,10 @@ const UserCard = ({ user, deleteUser, setUserEdit, handleOpenForm, setconfirmati
     handleOpenForm()
   }
 
+//console.log(user)
   return (
     <article className='card'>
-      <h2 className='card__name'>{`${user.first_name} ${user.last_name}`}</h2>
+      <h2 className='card__name'>{`${user.firstname} ${user.lastname}`}</h2>
       <hr className='card__hr'/>
       <ul className='card__list'>
         <li className='card__item'><span className='card__label'>Email: </span><span className='card__value'>{user.email}</span></li>
